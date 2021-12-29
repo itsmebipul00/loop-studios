@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- <a href="#main" class="skip-to-content">Menu</a> -->
+  <header>
+    <div class="heading-container container">
+      <img src="./images/logo.svg" alt="loopstudios-logo" class="logo">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+          aria-expanded="false">Menu</span></button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+          <li><a href="#"><span aria-hidden="true">About</span></a></li>
+          <li><a href="#"><span aria-hidden="true">Careers</span></a></li>
+          <li><a href="#"><span aria-hidden="true">Events</span></a></li>
+          <li><a href="#"><span aria-hidden="true">Products</span></a></li>
+          <li><a href="#"><span aria-hidden="true">Support</span></a></li>
+        </ul>
+      </nav>
+      <h1 class="fs-300 uppercase ff-sans-josefin letter-spacing-1">Immersive experiences that deliver</h1>
+    </div>
+  </header>
+  <main>
+    <div class="about-container container">
+      <img src="./images/mobile/image-interactive.jpg" alt="interactiveVR-photo" class="vr-image">
+      <div class="about about-position">
+        <h2 class="fs-300 uppercase ff-sans-josefin letter-spacing-2 text-dark">The leader in interactive VR</h2>
+        <p class="about-info letter-spacing-3 text-dark-grey"> Founded in 2011, Loopstudios has been producing
+          world-class virtual
+          reality projects for
+          some of the best
+          companies around the globe.Our award-winning creations have transformed businesses through digital experiences
+          that bind to their brand.</p>
+      </div>
+    </div>
+    <div class="creation-container container">
+      <h2 class="creation uppercase ff-serif-alata letter-spacing-2 text-dark fs-200">Our creations</h2>
+      <div class="grid-items">
+        <div class="deep-earth grid-image"></div>
+        <div class="night-arcade grid-image"></div>
+        <div class="soccer-team-vr grid-image"></div>
+        <div class="the-grid grid-image"></div>
+        <div class="from-up-above-vr grid-image"></div>
+        <div class="pocket-borealis grid-image"></div>
+        <div class="the-curiosity grid-image"></div>
+        <div class="make-it-fisheye grid-image"></div>
+      </div>
+      <a href="#" class="see-all text-dark uppercase ff-serif-alata letter-spacing-2">See All</a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <img src="./images/logo.svg" alt="loopstudios-logo" class="logo-footer">
+      <section class="call-to-action">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+      </section>
+      <section class="socials">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="icon-facebook" class="social-image fb"></a>
+        <a href="#"><img src="./images/icon-twitter.svg" alt="icon-twitter" class="social-image twitter"></a>
+        <a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest" class="social-image pintrest"></a>
+        <a href="#"><img src="./images/icon-instagram.svg" alt="icon-instagram" class="social-image ig"></a>
+      </section>
+      <p class="copyright text-very-dark-grey"> © 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

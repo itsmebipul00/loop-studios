@@ -1,0 +1,146 @@
+:root{
+    --clr-white: 0, 0%, 100%;
+    --clr-black: 0, 0%, 0%;
+    --clr-dark-grey: 0, 0%, 55%;
+    --clr-very-dark-grey: 0, 0%, 41%;
+
+    --fs-400: 1rem;
+    --fs-600: 3rem;
+
+    --ff-serif-alata: "Alata", serif;
+    --ff-sans-josefin: "Josefin", sans-serif; 
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 300;
+}
+
+body{
+    font-size: var(--fs-400);
+    font-family: var(--ff-serif-alata);
+    /* min-height: 100vh; */
+    color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-black));
+    padding: 0;
+   
+
+}
+
+.ff-serif-alata{ font-family: var(--ff-serif-alata);}
+.ff-sans-josefin { font-family: var(--ff-sans-josefin);}
+
+.fs-300 { font-size: var(--fs-600);}
+
+.text-dark { color: hsl(var(--clr-black));}
+.text-white { color: hsl(var(--clr-white));}
+.text-dark-grey {color: hsl(var(--clr-dark-grey));}
+.text-very-dark-grey { color: hsl(var(--clr-very-dark-grey));}
+
+.uppercase { text-transform: uppercase;}
+
+.sr-only {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px; 
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
+.skip-to-content {
+    position: absolute;
+    z-index: 9999;
+    background: hsl( var(--clr-white) );
+    color: hsl( var(--clr-dark) ); 
+    padding: .5em 1em;
+    margin-inline: auto;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+    transform: translateY(0);
+}
+
+.mobile-nav-toggle{display: none;}
+
+.grid { 
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.d-block{
+    display: block;
+}
+
+.mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    z-index: 2000;
+    background: transparent;
+    background-image: url(./images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(./images/icon-close.svg);
+}
+
+header{
+    /* background: url(./images/mobile/image-hero.jpg); */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.container{
+    min-height: 100vh;
+    max-width: 60rem;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+h1{
+    border: 2px solid white;
+    padding: .5em;
+    align-items: start;
+}
