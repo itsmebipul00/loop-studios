@@ -24,6 +24,7 @@
 .vr-image,
 .logo{
     max-width: 100%;
+    min-width: 50%;
     display: block;
 }
 
@@ -151,6 +152,7 @@ h1{
 /* LAYOUT */
 
 .container{
+    min-height: 100vh;
     max-width: 80rem;
     padding: 0 2em;
     margin-inline: auto;
@@ -219,6 +221,7 @@ h1{
     grid-template-areas:
         'image about';
     position: relative;
+    
 }
 
 .vr-image{
@@ -240,7 +243,7 @@ h1{
     max-width: 50ch;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1250px){
     .about-container{
         display: flex;
         flex-direction: column;
@@ -326,6 +329,12 @@ h1{
 .grid-image{
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    opacity: 1;
+}
+
+.grid-image > h3{
+    align-self: end;
 }
 
 @media (max-width: 1200px){
@@ -336,6 +345,47 @@ h1{
         height: 25vh;
     }
 }
+
+@media (max-width: 980px){
+    .deep-earth{
+        background: url(./images/mobile/image-deep-earth.jpg);
+    }
+    .night-arcade{
+        background: url(./images/mobile/image-night-arcade.jpg);
+    }
+    
+    .soccer-team-vr{
+        background: url(./images/mobile/image-soccer-team.jpg);
+    }
+    
+    .the-grid{
+        background: url(./images/mobile/image-grid.jpg);
+    }
+    
+    .from-up-above-vr{
+        background: url(./images/mobile/image-from-above.jpg);
+    }
+    
+    .pocket-borealis{
+        background: url(./images/mobile/image-pocket-borealis.jpg);
+    }
+    
+    .the-curiosity{
+        background: url(./images/mobile/image-curiosity.jpg);
+    }
+    
+    .make-it-fisheye{
+        background: url(./images/mobile/image-fisheye.jpg);
+    }
+
+    .grid-image{
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+
+/* FOOTER */
 
 footer{
     background-color: hsl(var(--clr-black));
@@ -380,4 +430,24 @@ footer{
     padding: .75em .75em .75em 0;
     text-decoration: none;
     color: var(--clr-white);  
+}
+
+@media (max-width: 580px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+    }
 }
