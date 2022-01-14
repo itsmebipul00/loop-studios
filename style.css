@@ -306,6 +306,11 @@ h1 {
   padding: 1em 1em 1em 0;
 }
 
+.see-all:hover {
+  background: hsl(var(--clr-black));
+  color: hsl(var(--clr-white));
+}
+
 .creation {
   grid-area: title;
 }
